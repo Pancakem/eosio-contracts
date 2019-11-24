@@ -102,5 +102,8 @@ private:
 
   int calculate_attack_point(const card& card1, const card& card2);
 
+  void resolve_selected_cards(game& game_data);  
+
+
   void draw_one_card(vector<uint8_t> & deck, vector<uint8_t> & hand);
 };
