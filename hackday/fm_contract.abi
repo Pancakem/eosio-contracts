@@ -1,0 +1,112 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "fam_tree",
+            "base": "",
+            "fields": [
+                {
+                    "name": "fam_name",
+                    "type": "name"
+                },
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "fam",
+                    "type": "tuple_uint64_list_std__string__list_std__string_[]"
+                }
+            ]
+        },
+        {
+            "name": "login",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "tuple_uint64_list_std__string__list_std__string_",
+            "base": "",
+            "fields": [
+                {
+                    "name": "field_0",
+                    "type": "uint64"
+                },
+                {
+                    "name": "field_1",
+                    "type": "string[]"
+                },
+                {
+                    "name": "field_2",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "upsertfamtree",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "famlyname",
+                    "type": "name"
+                },
+                {
+                    "name": "tree",
+                    "type": "tuple_uint64_list_std__string__list_std__string_[]"
+                }
+            ]
+        },
+        {
+            "name": "user_info",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "login",
+            "type": "login",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upsertfamtree",
+            "type": "upsertfamtree",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "familytree",
+            "type": "fam_tree",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "users",
+            "type": "user_info",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
